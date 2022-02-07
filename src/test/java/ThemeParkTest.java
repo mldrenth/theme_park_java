@@ -40,5 +40,15 @@ public class ThemeParkTest {
         assertEquals(true, visitor.getVisitedAttractions().contains(rollerCoaster));
     }
 
+    @Test
+    public void hasAllReviewOverview(){
+        assertEquals(3, themePark.getAllReviewsHashMap().size());
+    }
+
+    @Test
+    public void getAllAllowedLocations(){
+        assertEquals(2, themePark.getAllAllowedFor(visitor).size());
+    }
+
 
 }
